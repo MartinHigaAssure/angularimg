@@ -1,0 +1,25 @@
+<p>login-list works!</p>
+<div class="contenedor"> 
+    <h1>INICIAR SESI&Oacute;N</h1><br>
+    <p>Por favor ingresar sus datos correctamente</p><br><br>
+    
+   
+
+
+
+        <form>
+            <input matInput #correo>
+            <label>CORREO ELECTRONICO </label>
+        </form><br>
+        <form>
+            <input matInput type="password" #contrasena>
+            <label>CONTRASE&Ntilde;A </label>
+        </form><br>
+    
+    
+    <button class="boton_personalizado" (click)="loginUsuario(correo.value, contrasena.value)">Iniciar 
+    Sesion</button>
+
+    <ul><a class="log in" >¿No estas registrado? Registrate aqui!</a></ul>
+    
+    </div>

@@ -1,0 +1,37 @@
+<p>login-detail works!</p>
+
+<div class="contenedor"> 
+    <h1>Iniciar Sesion</h1><br>
+    <p>¡Bienvenido!</p>
+    <p>Por favor ingresar sus datos correctamente</p><br><br>
+    
+  <form>
+    <label>USUARIO </label>
+    <input matInput #username>
+</form><br>
+        <form>
+            <label>CORREO ELECTRONICO </label>
+            <input matInput #correo>
+        </form><br>
+        <form>
+            <label>CONTRASEÑA </label>
+            <input matInput type="password" #contrasena>
+        </form><br>
+        <form>
+            <label>NOMBRE </label>
+            <input matInput  #name>
+        </form><br>
+        <form>
+            <label>APELLIDO </label>
+            <input matInput  #lastname>
+        </form><br>
+    
+    
+        <button class="boton_personalizado" (click)="registerUsuario(username.value, correo.value, contrasena.value, name.value, lastname.value)">
+            registrarse
+        </button>
+    
+    <ul><a class="log in"> inicia sesion</a></ul>
+    
+    
+    </div>
